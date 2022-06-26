@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css"/>
+    <link rel="shortcut icon" href="../assets/img/favicontavo.png">
+    <script src="https://kit.fontawesome.com/800476bb0b.js" crossorigin="anonymous"></script>
+    <title>TAVO</title>
+</head>
+
+<body>
+    <div id="wrapper4">
+        <header>
+            <nav class="barranav">
+                <picture>
+                    <img class="logo" src="../assets/img/logo tavo (2).png" alt="logotavo">
+                </picture>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="../index.html">inicio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../pages/actividades.html">actividades</a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="../pages/actividades.html/clases.html">clases</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="../pages/actividades.html/ejercicios.html">ejercicios</a>
+                            </li>
+                            <li class="submenu__item"><a class="submenu__link" href="../pages/actividades.html/simuladores.html">simuladores</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../pages/bibliografia.html">bibliografia</a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="../pages/bibliografia.html/obstetriciaclinica.html"> obstetricia clinica</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="../pages/bibliografia.html/obstetricianormal.html">obstetricia normal</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="../pages/bibliografia.html/obstetriciapatologica.html">obstetricia patologica</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../pages/novedades.html">novedades</a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="../pages/novedades.html/cursos.html">Cursos</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="../pages/novedades.html/noticias.html">Noticias</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../pages/contactos.html">contactos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="titulo__principal__pagsecundaria" class="border">
+            <h1>CONTACTOS</h1>
+        </section>
+            
+        <address  id="direccion__de__contacto"class="disposicion_texto border">
+            <p>Escriba a <a href="mailto:consultas@tavo.com">consultas@tavo.com</a><br>telefono 011-xxxx-xxxx. <br>Visitenos en: Avenida juan de los palotes 000 <br> Box 564, Ciudad Autonoma de Buenos Aires.<br>Argentina.<br></p>
+            <picture>
+                <img class="mapa" src="../assets/img/localizaciondetavo.png" alt="mapa de localizacion">
+             </picture>
+        </address>
+            
+        <section id="formulario" class="border">
+            <article class="articulo">
+                <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
+                    <fieldset>
+                        <legend class="configuracion_formulario">REALIZA TU CONSULTA AQUI</legend>
+                        <legend>Datos Personales</legend>
+                        <label class="config_texto" for="nombre">Nombre:</label>
+                        <input class= "config_texto" type="text"id="nombre" name="nombre"autofocus required/><br>
+                        <label class= "config_texto" for="apellido">Apellido:</label> 
+                        <input class= "config_texto" type="text" id="apellido" name="apellido"required><br>
+                        <label class= "config_texto" for="email">Email:</label>
+                        <input class= "config_texto" type="email" id="email" name="email"placeholder="dominio@gmail.com" required pattern="@gmail.com"/><br>
+                        <label class= "config_texto" for="ocupacion">Ocupacion</label>
+                        <select class= "config_texto" name="ocupacion">
+                            <option value="estudiante de lic en obstetricia">estudiante de lic. en obstetricia</option>
+                            <option value="estudiante de medicina">estudiante de medicina</option>
+                            <option value="lic. en obstetricia">lic. en obstetricia</option>
+                            <option value="medico">medico</option>
+                            <option value="estudiante de otras carreras">estudiante de otras carreras</option>
+                            <option value="otra profesion">otra profesion</option>
+                        </select>
+                        <div class= "config_texto"><p>¿Desea recibir notificaciones?</p>
+                            <div> si
+                                <input type="radio" name="notificaciones" value="si">
+                            </div>
+                            <div> no
+                                 <input type="radio" name="notificaciones" value="no">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="config_texto" for="escriba su consulta">Escriba su consulta</label><br>
+                            <textarea name="consulta" id="consulta" rows="5" cols="45"></textarea>
+                        </div>                            
+                        <input type="submit" value="enviar">
+                        <input type="reset" value="borrar todo">
+                    </fieldset>
+                </form>
+            </article>
+        </section>   
+        <footer>
+            <p>Derechos reservados 2022 - Al usar este sitio, usted acepta nuestros términos de uso y nuestra política de privacidad.</p>
+            <div class="redes__sociales">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </footer>
+    </div>    
+</body>
+
+</html>
