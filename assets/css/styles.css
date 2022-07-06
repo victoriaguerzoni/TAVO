@@ -19,9 +19,9 @@ html, body{
     "presentacion"
     "mifooter";
     
-    grid-template-rows: 100px 30px 1fr 1fr 1fr 60px;
+    grid-template-rows: auto auto 1fr 1fr 1fr auto;
     grid-column-gap:5px;
-    grid-row-gap:10px;
+    grid-row-gap:5px;
     width: 100%;
     height: 100vh;
 }
@@ -38,161 +38,105 @@ header{
     display: flex;
     justify-content: left;
     margin-left: 5px;
-    width: 50px;
-    height: 50px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     border: 3px solid #aadce5;
-}
-
-/*menu de navegacion*/
-.barranav{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-}
-
-.menu{
-    display:flex;
-    background-color: #1d94a4;
-    list-style-type: none;
-    justify-content:left;
-    width: 65vw;
-}
-
-.menu__item{
-    list-style-type:none;
-    transition: all .5s;
-}
-.menu__item:hover{
-    background-color: #aadce5;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 2px 2px 2px rgba(206,89,55,0);  /*gradientes en titulo*/    
-
-}
-
-.submenu__item{
-    list-style-type:none;
-}
-
-.menu__link{
-    text-decoration: none;
-    display:inline-block;
-    color: white;
-    font-size: bold;
-    padding: 1rem;
-}
-
-.submenu__link{
-    text-decoration: none;
-    display:inline-block;
-    color: #fff;
-    padding: 1rem;
-}
-
-.submenu{
-    position: absolute;
-    display: none;
-} 
-.menu__item:hover .submenu{
-    display: block;
-    background-color: #1d94a4;
 }
 
 /*aside:presentacion en margen izquierdo*/
 aside{
     grid-area: presentacion;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #aadce5;
     font-size: 10px;
     text-align: center;
     line-height: 1.5;
-    padding: 12px;
 }
 
 .titulodepresentacion{
     text-align: center;
+    font-size: small;
 }
 
 /*1°seccion: titulo principal*/
-section#titulo_principal{
+.titulo_principal{
     grid-area: tituloprincipal;
-    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
     color:#162b6e;
+    font-size: 18px;
     align-items: center;
 }
 
 /*2°seccion: intro*/
-section#intro{
+article#intro{
     grid-area: intro;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.introduccion{
+    flex-wrap: wrap;
     display: flex;
-    align-items: center;    
-    margin-left: 50px;
-    margin-right: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
 .intro_img{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    width: 150px;
-    height: 150px;
+    width: 30%;
+    height: 30%;
     border-radius: 50%;
     border:5px solid #aadce5;   
 }
 
 .intro_parrafo{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-family:'Nunito', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    color:#162b6e;
-    width: 500px;
-    height: 200px;
-    padding-left: 2rem;
-    padding-top: 1rem;     
+    color:#162b6e;   
 }
 
 /*3°seccion:desarrollo*/
 section#desarrollo{
     grid-area:desarrollo;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .titulosecundario{
     text-align: center;
-    font-size: 18px;
     font-size: bold;
     color: #162b6e;
 } 
 
 .fundamentos{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    justify-content: center;
 }
 
 .fundamentos_img{
     display: flex;
-    width: 150px;
-    height: 150px;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 30%;
     border-radius: 50%;
     border: 5px solid #aadce5;
+    margin-bottom: 2rem;
 }
 
 .fundamentos_parrafo{
     display: flex;
-    width: 500px;
-    height: 150px;
-    padding-right: 2rem;
+    flex-wrap: wrap;
     font-family:'Nunito', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -208,8 +152,8 @@ h1{
 }
 
 .actividades_img{
-    width: 250px;
-    height: 250px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     border: 5px solid #1ecbe1;    
 }
@@ -266,68 +210,74 @@ h1{
 }
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA BIBLIOGRAFIA*/
-    /* titulo: bibliografia= centrado y en violeta*/
+/* titulo: bibliografia= centrado y en violeta*/
 .titulo__de__seccion{
     color:#1ecbe1;
     text-align: center;
     border: 1px solid #1ecbe1;
     padding-top: 1rem;
     font-family:'Nunito', sans-serif;;
-    font-size: 20px;
-    width: 250px;
-    height: 50px;
+    font-size: 16px;
     margin: auto;
 }
 
 /* como esta dispuesta los titulos y los subtemas*/
-#disposicion_bibliografia{
+.disposicion_bibliografia{
     display: flex;
     flex-direction: column;
-    justify-content: left;          
+    justify-content: center;
+    text-align: center;              
 }
 
 #obstetriciaclinica{
     display: flex;
     border: 2px solid #1ecbe1;
-    font-size: 40px;
+    font-size: 30px;
     color:#1d94a4;
 }
 
 #obstetricianormal{
     display: flex;
     border: 2px solid #1ecbe1;
-    font-size: 40px;
+    font-size: 30px;
     color:#1d94a4;
 }
 
 #obstetriciapatologica{
     display: flex;
     border: 2px solid #1ecbe1;
-    font-size: 40px;
+    font-size: 30px;
     color:#1d94a4;
 }
 
 .dt{
-    font-size: 40px;
+    font-size: 20px;
+    text-align: center;
 }
 
 dd{
     font-size: 18px;
     line-height: 1.6;
-    text-align: justify;
+    text-align: center;
     text-decoration:underline;
     color: #162b6e;    
 }
 
 /* CONFIGURACION MOBILEFIRST DE LA PAGINA NOVEDADES*/
+ /*distribucion de las imagenes y titulos*/   
+ .disposicion_novedades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;        
+}
 /*Formato para la imagen*/
 .novedades_img{
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     border: 5px solid #1ecbe1; 
-    margin-left: 2rem;
-    margin-top: 2rem;     
+    
 }
 
 /*formato para el titulo novedades*/
@@ -336,22 +286,14 @@ dd{
     text-align: center;
     font-family:'Nunito', sans-serif;;
     font-size: 40px;
-    width: 150px;
-    height: 75px;
-    margin-left: 2rem;
 }
 
- /*distribucion de las imagenes y titulos*/   
-.disposicion_novedades{
-    display: flex;
-    flex-direction: column;         
-}
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA CONTACTOS*/
 h1{
     text-align: center;
     padding: 2px;
-    font-size: 20px;
+    font-size: 18px;
     color: #162b6e;
 }
 
@@ -361,11 +303,10 @@ h1{
 }
 
 .mapa{
-    width: 400px;
-    height: 400px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     border:3px solid #aadce5;
-    margin: 1rem;
 }
 
 .articulo{
@@ -400,7 +341,7 @@ h1{
         "desarrollo presentacion"
         "mifooter mifooter";
         grid-template-columns:80% 20% ;
-        grid-template-rows: 100px 30px 1fr 1fr 60px;
+        grid-template-rows: auto auto 1fr 1fr auto;
     }
 
     aside{
@@ -430,101 +371,46 @@ h1{
         border: 5px solid #aadce5;
     }
 
-    /*menu de navegacion*/
-    .barranav{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        color:#fff;
-    }
-
-    .menu{
-        display:flex;
-        background-color: #1d94a4;
-        list-style-type: none;
-        justify-content:space-between;
-        width: 50vw;
-    }
-
-    .menu__item{
-        list-style-type:none;
-    }
-
-    .menu__item:hover{
-        background-color: #aadce5;
-    }
-
-    .submenu__item{
-        list-style-type:none;
-    }
-
-    .menu__link{
-        text-decoration: none;
-        display:inline-block;
-        color: white;
-        font-size: bold;
-        padding: 1rem;
-    }
-
-    .submenu__link{
-        text-decoration: none;
-        display:inline-block;
-        color: #fff;
-        padding: 1rem;
-    }
-
-    .submenu{
-        position: absolute;
-        display: none;
-    } 
-
-    .menu__item:hover .submenu{
-        display: block;
-        background-color: #1d94a4;
-    }
-
-    /*1°seccion: titulo principal*/
-    section#tituloprincipal{
+     /*1°seccion: titulo principal*/
+    .tituloprincipal{
         grid-area: tituloprincipal;
+        display: flex;
         text-align: center;
+        justify-content: center;
         font-size: 20px bold;
         color: #162b6e;
     }
 
     /*2°seccion: intro*/
-    section#intro{
+    article#intro{
         grid-area: intro;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .introduccion{
+    .introduccion {
         display: flex;
-        align-items: center;    
+        justify-content: center;
         margin-left: 250px;
         margin-right: 1rem;
     }
 
     .intro_img{
         display: flex;
-        align-items: center;
-        width: 120px;
-        height: 120px;
+        justify-content: center;
+        width: 50%;
+        height: 50%;
         border-radius: 50%;
         border:5px solid #aadce5;      
     }
 
     .intro_parrafo{
         display: flex;
-        align-items: center;
+        justify-content: center;
         font-weight: lighter;
         font-size: 14px;
-        width: 350px;
-        height: 200px;
-        padding-left: 2rem;
-        padding-top: 1rem;
-        line-height: 1.3;     
+        line-height: 1.3;
+        margin-top: 1rem;     
     }
 
     /*3°seccion:desarrollo*/
@@ -545,26 +431,24 @@ h1{
 
     .fundamentos{
         display: flex;
-        align-items: center;
+        justify-content: center;
         margin-left: 300px;
         margin-right: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1 rem;
     }
 
     .fundamentos_img{
         display: flex;
-        width: 120px;
-        height: 120px;
+        width: 50%;
+        height: 50%;
         border-radius: 50%;
         border: 5px solid #aadce5;
     }
 
     .fundamentos_parrafo{
         display: flex;
-        width: 350px;
-        height: 200px;
+        flex-direction: row;
         padding-top: 1rem;
-        padding-right: 1rem;
         font-weight: lighter;
         font-size: 14px;
         line-height: 1.3;
@@ -579,9 +463,9 @@ h1{
         "clases ejercicios simuladores"
         "mifooter mifooter mifooter";
         grid-template-columns:33% 33% 33% ;
-        grid-template-rows: 100px 30px 1fr 60px;
-        grid-row-gap: 15px;
-        grid-column-gap:15px;
+        grid-template-rows: auto auto 1fr auto;
+        grid-row-gap: 5px;
+        grid-column-gap:5px;
         width: 100%;
         height: 100vh;        
     }
@@ -590,8 +474,7 @@ h1{
         grid-area:tituloprincipalpagsecundaria;
         display: flex;
         justify-content: center;
-        width: 100%;
-        font-size: 20px;    
+        font-size: 16px;    
     }
 
     section#clases{
@@ -624,8 +507,8 @@ h1{
 
     .actividades_img{
         display: flex;
-        width: 250px;
-        height: 250px;
+        width: 30%;
+        height: 30%;
         border-radius: 50%;
         border: 5px solid #aadce5;    
     }
@@ -658,17 +541,18 @@ h1{
         "obstetriciaclinica obstetricianormal obstetriciapatologica"
         "mifooter mifooter mifooter";
         grid-template-columns:33% 33% 33% ;
-        grid-template-rows: 100px 30px 1fr 60px;
-        grid-row-gap: 15px;
-        grid-column-gap:15px;
+        grid-template-rows: auto auto 1fr auto;
+        grid-row-gap: 5px;
+        grid-column-gap:5px;
         width: 100%;
         height: 100vh;         
     }
 
     .disposicion_bibliografia{
         display: flex;
-        flex-direction: row;        
-        margin-left: 300px;          
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;       
     }
 
     #obstetriciaclinica{
@@ -714,10 +598,10 @@ h1{
         "tituloprincipalpagsecundaria tituloprincipalpagsecundaria"
         "cursos noticias"
         "mifooter mifooter";
-        grid-template-columns:50% 50% ;
-        grid-template-rows: 100px 30px 1fr 60px;
-        grid-row-gap: 15px;
-        grid-column-gap:15px;
+        grid-template-columns:50% 50%;
+        grid-template-rows: auto auto 1fr auto;
+        grid-row-gap: 5px;
+        grid-column-gap:5px;
         width: 100%;
         height: 100vh;        
     }
@@ -726,7 +610,8 @@ h1{
         grid-area:cursos;
         display: flex;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;
+        align-items: center;        
     }
 
     section#noticias{
@@ -738,8 +623,8 @@ h1{
 
     /*Formato para la imagen*/
     .novedades_img{
-        width: 250px;
-        height: 250px;
+        width: 50%;
+        height: 50%;
         border-radius: 50%;
         border: 10px solid #1d94a4;
     }
@@ -749,16 +634,13 @@ h1{
         color:#1d94a4;
         text-align: center;
         font-family:'Nunito', sans-serif;;
-        font-size: 40px;
-        width: 300px;
-        height: 75px;
-        margin-left: 1rem;        
+        font-size: 40px;       
     }
 
     /*distribucion de las imagenes y titulos*/   
     .disposicion_novedades{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;           
     }
@@ -772,9 +654,9 @@ h1{
         "direcciondecontacto formulario"
         "mifooter mifooter";
         grid-template-columns:50% 50% ;
-        grid-template-rows: 100px 30px 1fr 60px;
-        grid-row-gap: 15px;
-        grid-column-gap:15px;
+        grid-template-rows: auto auto 1fr auto;
+        grid-row-gap: 5px;
+        grid-column-gap:5px;
         width: 100%;
         height: 100vh;        
     }
@@ -783,7 +665,6 @@ h1{
         grid-area:tituloprincipalpagsecundaria;
         display: flex;
         justify-content: center;
-        width: 100%;
         font-size: 20px;
     }
 
@@ -801,7 +682,7 @@ h1{
         background-color:#fff;
         color: #1d94a4;
         font-size: bold;
-        width: 100%;
+        
     }
 
     .config_texto{
@@ -810,111 +691,14 @@ h1{
     }
 
     .mapa{
-        width: 250px;
-        height: 250px;
+        width: 50%;
+        height: 50%;
         border-radius: 50%;
         border:3px solid #aadce5;
         margin: 1rem;
     } 
 
-}
-
-/*----CONFIGURACION PARA PC DEL INDEX----*/
-@media screen and (min-width: 1024px){
-    #wrapper{
-        display: grid;
-        grid-template-areas: 
-        "miheader miheader"
-        "tituloprincipal tituloprincipal"
-        "intro presentacion"
-        "desarrollo presentacion"
-        "mifooter mifooter";
-        grid-template-columns:80% 20% ;
-        grid-template-rows: 100px 30px 1fr 1fr 60px;
-    }
-    aside{
-        visibility: visible;
-        grid-area: presentacion;
-        background-color: #aadce5;
-        font-size: 12px;
-        text-align: justify;
-        line-height: 1.5;
-        padding: 12px;
-    }
-    /*2°seccion: intro*/
-    section#intro{
-        grid-area: intro;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 1rem;
-    }
-    .introduccion{
-        display: flex;
-        align-items: center;    
-        margin-left: 300px;
-        margin-right: 1rem;
-    }
-    .intro_img{
-        display: flex;
-        align-items: center;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border:5px solid #aadce5;      
-    }
-    .intro_parrafo{
-        display: flex;
-        align-items: center;
-        font-weight: lighter;
-        font-size: 16px;
-        width: 400px;
-        height: 200px;
-        padding-right: 4rem;
-        padding-top: 1rem;
-        line-height: 1.3;     
-    }
-    
-    /*3°seccion:desarrollo*/
-    
-    section#desarrollo{
-        grid-area:desarrollo;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 1rem;
-    }
-    .titulosecundario{
-        text-align: center;
-        font-size: bold;
-        color: #162b6e;
-    }   
-    .fundamentos{
-        display: flex;
-        align-items: center;
-        margin-left: 250px;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-    }
-    .fundamentos_img{
-        display: flex;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 5px solid #aadce5;
-        margin-right: 1rem;
-    }
-    .fundamentos_parrafo{
-        display: flex;
-        width: 400px;
-        height: 200px;
-        padding-right: 1rem;
-        font-weight: lighter;
-        font-size: 16px;
-        line-height: 1.3;
-    }
-}    
-
+} 
 footer{
     grid-area:mifooter;
     background-color: #162b6e;
@@ -924,6 +708,7 @@ footer{
     font-size: 10px;
     color:#fff;   
 }
+
 
 .redes__sociales{
     letter-spacing: 4px;/*utilizo esta caracteristica de espaciado porque separa los caracteres de fontwasome*/

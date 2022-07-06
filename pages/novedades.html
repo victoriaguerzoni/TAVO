@@ -8,73 +8,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>       
     <link rel="shortcut icon" href="../assets/img/favicontavo.png">
     <script src="https://kit.fontawesome.com/800476bb0b.js" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"/> 
+    <script src="../assets/bootstrap/js/jquery.slim.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/estilos.css"/>
     <title>TAVO</title>
 </head>
 
 <body>
     <div id="wrapper3">
         <header>
-            <nav class="barranav">
-                <picture>
-                    <img class="logo" src="../assets/img/logo tavo (2).png" alt="logotavo">
-                </picture>
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="../index.html">inicio</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="../pages/actividades.html">actividades</a>
-                        <ul class="submenu">
-                            <li class="submenu__item">
-                                <a class="submenu__link" href="../pages/actividades.html/clases.html">clases</a>
-                            </li>
-                            <li class="submenu__item">
-                                <a class="submenu__link" href="../pages/actividades.html/ejercicios.html">ejercicios</a>
-                            </li>
-                            <li class="submenu__item"><a class="submenu__link" href="../pages/actividades.html/simuladores.html">simuladores</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="../pages/bibliografia.html">bibliografia</a>
-                        <ul class="submenu">
-                            <li class="submenu__item">
-                                <a class="submenu__link" href="../pages/bibliografia.html/obstetriciaclinica.html"> obstetricia clinica</a>
-                            </li>
-                            <li class="submenu__item">
-                                <a class="submenu__link" href="../pages/bibliografia.html/obstetricianormal.html">obstetricia normal</a>
-                            </li>
-                            <li class="submenu__item">
-                                <a class="submenu__link" href="../pages/bibliografia.html/obstetriciapatologica.html">obstetricia patologica</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="../pages/novedades.html">novedades</a>
-                        <ul class="submenu">
-                            <li class="submenu__item">
-                                <a class="submenu__link" href="../pages/novedades.html/cursos.html">Cursos</a>
-                            </li>
-                            <li class="submenu__item">
-                                <a class="submenu__link" href="../pages/novedades.html/noticias.html">Noticias</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="../pages/contactos.html">contactos</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="container">
+                <div class="row justify-content-start align-items-center">
+                    <div class="col-4 text-center mt-2 mb-2">
+                        <img class="logo" src="../assets/img/logo tavo (2).png" alt="logotavo">
+                    </div>
+                    <div class="col-6 text-center mt-2 mb-2">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand" href=""></a>
+                          
+                            <div class="navbar-collapse collapse show" id="navbarTogglerDemo02" style="border-color: blue;">
+                                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../index.html">inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../pages/bibliografia.html">bibliografia</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="../pages/novedades.html">Novedades<span class="sr-only">(current)</span></a>                
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../pages/contactos.html">contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>                                  
+                    </div>    
+                </div>
+            </div>
         </header>
-        <section id="titulo__principal__paginas__secundarias" class="border">
+
+        <section id="titulo__principal__paginas__secundarias">
             <h1>NOVEDADES</h1>
-        </section>
-        
-        <section id="cursos" class="disposicion_novedades border">
-            <img class="novedades_img" src="../assets/img/cursosycacitaciones.jpg" alt="cursos" width="100" height="100">
+        </section>        
+        <section id="cursos" class="disposicion_novedades">
+            <img class="novedades_img" src="../assets/img/cursosycacitaciones.jpg" alt="cursos">
             <h2 class="titulo_novedades">Cursos</h2>
         </section>
-        <section id="noticias" class="disposicion_novedades border">
-            <img class="novedades_img" src="../assets/img/noticias.jpg" alt= "noticias" width="100" height="100">
+        <section id="noticias" class="disposicion_novedades">
+            <img class="novedades_img" src="../assets/img/noticias.jpg" alt= "noticias">
             <h2 class="titulo_novedades">Noticias</h2>
         </section>
 
