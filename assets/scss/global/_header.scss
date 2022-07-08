@@ -1,0 +1,26 @@
+header{
+    grid-area:miheader;
+    display: flex;
+    background-color: #162b6e;
+    justify-content:left;
+    align-items: left;
+}
+
+.logo{ 
+    display: flex;
+    justify-content: left;
+    margin-left: 5px;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 3px solid #aadce5;
+}
+@media screen and (min-width:992px){
+    .logo{
+        width: 30%;
+        height: 30%;
+        border-radius: 50%;
+    }
+
+}
+    
