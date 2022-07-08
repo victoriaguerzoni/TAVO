@@ -1,0 +1,18 @@
+footer{
+    grid-area:mifooter;
+    background-color: #162b6e;
+    padding-top: 15px;
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    font-size: 10px;
+    color:#fff;   
+
+    &.redes__sociales{
+        letter-spacing: 4px;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    
+}
+
