@@ -1,0 +1,17 @@
+@mixin titulodecoradoneon ($color){
+    color:$color;
+    text-shadow:0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 2px 2px 2px rgba(206,89,55,0);   
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    font-size: 40px;
+    padding-left: 2rem;
+    width: 250px;
+    height: 75px;
+    
+}
+.titulo_actividades{
+    @include titulodecoradoneon(#5d18a6);
+}
+.titulo_novedades{
+    @include titulodecoradoneon(#5d18a6);
+}

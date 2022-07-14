@@ -1,0 +1,33 @@
+.imagen{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 5px solid #aadce5;
+}
+
+.intro_img{
+    @extend .imagen;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.fundamentos_img{
+    @extend .imagen;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.actividades_img{
+    @extend .imagen; 
+}
+
+.novedades_img{
+    @extend .imagen;     
+}
+
+.mapa{
+    @extend .imagen;
+}

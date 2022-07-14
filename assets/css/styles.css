@@ -38,16 +38,6 @@ aside{
     font-size: small;
 }
 
-/*1°seccion: titulo principal*/
-.titulo_principal{
-    grid-area: tituloprincipal;
-    display: flex;
-    flex-wrap: wrap;
-    color:#162b6e;
-    font-size: 18px;
-    align-items: center;
-}
-
 /*2°seccion: intro*/
 article#intro{
     grid-area: intro;
@@ -57,15 +47,6 @@ article#intro{
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-.intro_img{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 30%;
-    height: 30%;
-    border-radius: 50%;
-    border:5px solid #aadce5;   
 }
 
 .intro_parrafo{
@@ -91,7 +72,7 @@ section#desarrollo{
 
 .titulosecundario{
     text-align: center;
-    font-size: bold;
+    font-size: 18px;
     color: #162b6e;
 } 
 
@@ -102,19 +83,10 @@ section#desarrollo{
     justify-content: center;
 }
 
-.fundamentos_img{
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%;
-    height: 30%;
-    border-radius: 50%;
-    border: 5px solid #aadce5;
-    margin-bottom: 2rem;
-}
-
 .fundamentos_parrafo{
     display: flex;
     flex-wrap: wrap;
+    border-top: 2rem;
     font-family:'Nunito', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -122,24 +94,6 @@ section#desarrollo{
 }
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA ACTIVIDADES*/
-
-.actividades_img{
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    border: 5px solid #1ecbe1;    
-}
-
-.titulo_actividades{
-    color:#5d18a6;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 2px 2px 2px rgba(206,89,55,0);  /*gradientes en titulo*/    
-    text-align: left;
-    font-family:'Nunito', sans-serif;
-    font-size: 40px;
-    padding-left: 2rem;
-    width: 250px;
-    height: 75px;
-}
 
 .animate-big{
     width:250px;
@@ -156,10 +110,10 @@ section#desarrollo{
 /*como estan dispuesta la imagen y el texto: filas y titulo en paralelo*/
 .disposicion_actividades{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 3rem;  
+    border: 2rem;  
 }
 
 @keyframes color-transition{
@@ -246,36 +200,12 @@ dd{
     justify-content: center; 
     align-items: center;        
 }
-/*Formato para la imagen*/
-.novedades_img{
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    border: 5px solid #1ecbe1; 
-    
-}
-
-/*formato para el titulo novedades*/
-.titulo_novedades{
-    color:#1ecbe1;
-    text-align: center;
-    font-family:'Nunito', sans-serif;;
-    font-size: 40px;
-}
-
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA CONTACTOS*/
 
 .disposicion_texto{
     text-align: center;
     padding-top: 1rem;
-}
-
-.mapa{
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    border:3px solid #aadce5;
 }
 
 .articulo{
@@ -337,15 +267,6 @@ dd{
         margin-right: 1rem;
     }
 
-    .intro_img{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        height: 50%;
-        border-radius: 50%;
-        border:5px solid #aadce5;      
-    }
-
     .intro_parrafo{
         display: flex;
         justify-content: center;
@@ -377,14 +298,6 @@ dd{
         margin-left: 18rem;
         margin-right: 2rem;
         margin-bottom: 1 rem;
-    }
-
-    .fundamentos_img{
-        display: flex;
-        width: 50%;
-        height: 50%;
-        border-radius: 50%;
-        border: 5px solid #aadce5;
     }
 
     .fundamentos_parrafo{
@@ -436,15 +349,10 @@ dd{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;   
+        align-items: center;
+        border: 2rem;   
     }
-    .actividades_img{
-        display: flex;
-        width: 30%;
-        height: 30%;
-        border-radius: 50%;
-        border: 5px solid #aadce5;    
-    }
+
 
     .titulo_actividades{
         display: flex;
@@ -596,7 +504,7 @@ dd{
     address#direccion__de__contacto{
         grid-area: direcciondecontacto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     section#formulario{
@@ -614,15 +522,6 @@ dd{
         margin: 10px;
         color:#1d94a4;        
     }
-
-    .mapa{
-        display: flex;
-        width: 50%;
-        height: 50%;
-        border-radius: 50%;
-        border:3px solid #aadce5;
-        margin: 1rem;
-    } 
 
 } 
 

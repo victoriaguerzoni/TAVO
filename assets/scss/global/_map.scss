@@ -1,0 +1,11 @@
+$bibliografia:(
+    "obstetriciaclinica":#1d94a4,
+    "obstetricianormal":#5d18a6,
+    "obstetriciapatologica":#162b6e
+);
+@each $subtema, $color in $bibliografia {
+    .subtitulo-#{$subtema}{
+        color:$color;
+    }
+    
+}
