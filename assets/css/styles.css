@@ -7,14 +7,14 @@
 #wrapper{
     display: grid;
     grid-template-areas: 
-    "miheader"
     "tituloprincipal"
     "intro"
+    "titulosecundario"
     "desarrollo"
     "presentacion"
     "mifooter";
     
-    grid-template-rows: auto auto 1fr 1fr 1fr auto;
+    grid-template-rows: auto auto auto auto 1fr auto;
     grid-column-gap:5px;
     grid-row-gap:5px;
     width: 100%;
@@ -27,31 +27,28 @@ aside{
     grid-area: presentacion;
     display: flex;
     flex-wrap: wrap;
-    background-color: #aadce5;
+    background-color:#aadce5;
     font-size: 10px;
     text-align: center;
     line-height: 1.5;
 }
 
-.titulodepresentacion{
-    text-align: center;
-    font-size: small;
-}
-
-/*2°seccion: intro*/
+/*introduccion: texto central*/
 article#intro{
     grid-area: intro;
-    display: flex;
-    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
+.introduccion{
+    flex-direction: column;
+}
+
 .intro_parrafo{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     font-family:'Nunito', sans-serif;
     font-size: 14px;
@@ -59,26 +56,20 @@ article#intro{
     color:#162b6e;   
 }
 
-/*3°seccion:desarrollo*/
+/*Desarrollo: segundo parrafo central*/
 section#desarrollo{
     grid-area:desarrollo;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.titulosecundario{
-    text-align: center;
-    font-size: 18px;
-    color: #162b6e;
-} 
-
 .fundamentos{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
 }
@@ -86,6 +77,7 @@ section#desarrollo{
 .fundamentos_parrafo{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     border-top: 2rem;
     font-family:'Nunito', sans-serif;
     font-size: 14px;
@@ -95,25 +87,14 @@ section#desarrollo{
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA ACTIVIDADES*/
 
-.animate-big{
-    width:250px;
-    height: 75px;
-    transition: width .5s,heigth .5s;
-}
-
-.animate-big:hover{
-    width: 270px;
-    height: 80px;
-    color:#1ecbe1;
-}
-
 /*como estan dispuesta la imagen y el texto: filas y titulo en paralelo*/
 .disposicion_actividades{
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    border: 2rem;  
+    border: 2rem;
+    padding: 1rem;  
 }
 
 @keyframes color-transition{
@@ -203,8 +184,9 @@ dd{
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA CONTACTOS*/
 
-.disposicion_texto{
+.disposicion_parrafo_mapa{
     text-align: center;
+    align-content: center;
     padding-top: 1rem;
 }
 
@@ -234,13 +216,17 @@ dd{
     #wrapper{
         display: grid;
         grid-template-areas: 
-        "miheader miheader"
         "tituloprincipal tituloprincipal"
         "intro presentacion"
+        "titulosecundario presentacion"
         "desarrollo presentacion"
         "mifooter mifooter";
         grid-template-columns:80% 20% ;
-        grid-template-rows: auto auto 1fr 1fr auto;
+        grid-template-rows: auto auto auto 1fr auto;
+        grid-row-gap: 5px;
+        grid-column-gap:5px;
+        width: 100%;
+        height: 100%;          
     }
 
     aside{
@@ -257,54 +243,48 @@ dd{
     article#intro{
         grid-area: intro;
         display: flex;
-        flex-direction: column;
+        flex-direction:row;
         align-items: center;
+        margin: 0rem 4rem;
     }
     .introduccion {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        margin-left: 300px;
-        margin-right: 1rem;
     }
 
     .intro_parrafo{
         display: flex;
         justify-content: center;
+        padding-right: 1rem;
         font-weight: lighter;
-        font-size: 14px;
-        line-height: 1.3;
-        margin-top: 1rem;     
+        font-size: 18px;  
+        line-height: 1.3;   
     }
-
     /*3°seccion:desarrollo*/
 
-    section#desarrollo{
+    article#desarrollo{
         grid-area:desarrollo;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .titulosecundario{
-        justify-content: left;
-        padding-top: 1rem;
-        font-size:16px bold;
-        color: #162b6e;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        text-align: center;
+        margin: 0rem 4rem;
     }
 
     .fundamentos{
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        margin-left: 18rem;
-        margin-right: 2rem;
-        margin-bottom: 1 rem;
     }
 
     .fundamentos_parrafo{
         display: flex;
-        padding-top: 1rem;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
         font-weight: lighter;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 1.3;
     }
 
@@ -321,7 +301,7 @@ dd{
         grid-row-gap: 5px;
         grid-column-gap:5px;
         width: 100%;
-        height: 100vh;        
+        height: 100%;        
     }
 
 
@@ -353,13 +333,12 @@ dd{
         border: 2rem;   
     }
 
-
     .titulo_actividades{
         display: flex;
         color:#5d18a6;
         justify-content: center;
         align-items: center;
-        font-family:'Nunito', sans-serif;;
+        font-family:'Nunito', sans-serif;
         font-size: 40px;
         margin-top: 1rem;
     }
@@ -378,11 +357,6 @@ dd{
         grid-column-gap:5px;
         width: 100%;
         height: 100vh;         
-    }
-    section#titulo__principal__paginas__secundarias{
-        grid-area: tituloprincipalpagsecundaria;
-        display: flex;   
-    
     }
 
     .disposicion_bibliografia{
@@ -461,22 +435,6 @@ dd{
         justify-content: center;
     }
 
-    /*Formato para la imagen*/
-    .novedades_img{
-        width: 50%;
-        height: 50%;
-        border-radius: 50%;
-        border: 10px solid #1d94a4;
-    }
-
-    /*formato para el titulo novedades*/
-    .titulo_novedades{
-        color:#1d94a4;
-        text-align: center;
-        font-family:'Nunito', sans-serif;;
-        font-size: 40px;       
-    }
-
     /*distribucion de las imagenes y titulos*/   
     .disposicion_novedades{
         display: flex;
@@ -505,6 +463,7 @@ dd{
         grid-area: direcciondecontacto;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     section#formulario{
@@ -524,5 +483,59 @@ dd{
     }
 
 } 
+/*FOOTER*/
+footer{
+    grid-area:mifooter;
+    background-color: #1d94a4;
+    padding-top: 15px;
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    font-size: 18px;
+    color:#fff;
+}   
+
+.redes_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redes_container ul li{
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
+.redes_container ul li a{
+    display: block;
+    padding: 0 10px;
+    background:#fff;
+    color:#162b6e;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.redes_container ul:hover a{
+    filter:blur(2px);
+    border-radius: 50%;
+}
+.redes_container ul li a:hover{
+    transform: translateY(-3px)scale(1.05);
+    filter:none;
+    border-radius: 50%;
+}
+.redes_container ul li .fb:hover{
+    background:#162b6e;
+    border-radius: 50%;
+    border:5px solid #162b6e;
+}
+.redes_container ul li .ig:hover{
+    background:#d6249f;
+    border-radius: 50%;
+    border:5px solid #d6249f;
+}
+.redes_container ul li .tw:hover{
+    background:#1ecbe1;
+    border-radius: 50%;
+    border:5px solid #1ecbe1;
+}
 
 

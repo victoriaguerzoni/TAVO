@@ -21,51 +21,42 @@
 </head>
 
 <body>
-    <div id="wrapper2">
-        <header>
-            <div class="container">
-                <div class="row justify-content-start align-items-center">
-                    <div class="col-4 text-center mt-2 mb-2">
-                        <img class="logo" src="../assets/img/logo tavo (2).png" alt="logotavo">
-                    </div>
-                    <div class="col-6 text-center mt-2 mb-2">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand" href=""></a>
-                          
-                            <div class="navbar-collapse collapse show" id="navbarTogglerDemo02" style="border-color: blue;">
-                                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../index.html">inicio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../pages/actividades.html">Actividades</a>
-                                    </li>
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="../pages/bibliografia.html">bibliografia<span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../pages/novedades.html">Novedades</a>                
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="../pages/contactos.html">contacto</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>                                  
-                    </div>    
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark mt-2 mb-2" style="background-color:#162b6e;">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand">
+                <img src="../assets/img/logo tavo (2).png" alt="logotavo" class="logo">
+            </a>
+              
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../pages/bibliografia.html">bibliografia<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contactos.html">Contactos</a>
+                    </li>
+                </ul>
             </div>
-        </header>
-
-
-        <section id="titulo__principal__paginas__secundarias">
+        </nav>    
+    </header>
+    <div id="wrapper2">
+        <section id="titulo__principal__paginas__secundarias" class="animate__animated animate__fadeIn">
             <h1>BIBLIOGRAFIA</h1>
         </section>
     
-        <section class="disposicion_bibliografia" id="obstetriciaclinica" class="border">        
+        <section class="disposicion_bibliografia" id="obstetriciaclinica" class="border">       
             <dl>
                 <dt class="subtitulo-obstetriciaclinica">obstetricia clinica</dt>
                 <dd>semiologia obstetrica</dd>
@@ -92,13 +83,14 @@
                 <dd>cesarea</dd>
             </dl>
         </section>
-                    
         <footer>
             <p>Derechos reservados 2022 - Al usar este sitio, usted acepta nuestros términos de uso y nuestra política de privacidad.</p>
-            <div class="redes__sociales">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
+            <div class="redes_container">
+                <ul>
+                    <li a href="https://es-la.facebook.com/" class="facebook"><i class="fa-brands fa-facebook fb"></i></li>
+                    <li a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-instagram ig"></i></li>
+                    <li a href="https://twitter.com/?lang=es"class="twitter"><i class="fa-brands fa-twitter tw"></i></li>
+                </ul> 
             </div>
         </footer>
     </div>

@@ -21,45 +21,38 @@
     <title>tavo</title>
 
 </head>
-<body>
-    <div id="wrapper">
-        <header>
-            <div class="container">
-                <div class="row justify-content-start align-items-center">
-                    <div class="col-4 text-center mt-2 mb-2">
-                        <img class="logo" src="assets/img/logo tavo (2).png" alt="logotavo">
-                    </div>
-                    <div class="col-6 text-center mt-2 mb-2">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand" href=""></a>
-                          
-                            <div class="navbar-collapse collapse show" id="navbarTogglerDemo02" style="border-color: blue;">
-                                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="index.html">inicio<span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/actividades.html">Actividades</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/bibliografia.html">bibliografia</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/novedades.html">Novedades</a>                
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="pages/contactos.html">contacto</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>                                  
-                    </div>    
-                </div>
+<body>   
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark mt-2 mb-2" style="background-color:#162b6e;">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand">
+                <img src="assets/img/logo tavo (2).png" alt="logotavo" class="logo">
+            </a>
+              
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/bibliografia.html">bibliografia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </nav>    
+    </header>
+    <div id="wrapper">
         <section> 
             <h1 class="titulo_principal animate__animated animate__fadeInLeft">TAVO: Tecnologia de Aprendizaje Virtual en Obstetricia</h1>
         </section>
@@ -67,17 +60,18 @@
         <article id="intro" class="introduccion animate__animated animate__fadeInLeft">
             <img class="intro_img" src="./assets/img/imagendelindex.png" alt="imagendepresentacion">
             <p class="intro_parrafo">TAVO es un sitio web interactivo pensado para todas aquellos usuarios que quieran capacitarse en obstetricia, con el objetivo de ayudarlos a incorporar nuevos conocimientos de forma ordenada y generando espacios de autoevaluación. A su vez es dinámica y colaborativa, es decir que pueden interactuar entre participantes con distintos niveles formativos. Su fundamento se basa en adquirir un pensamiento integral para el abordaje de las gestantes.</p>
+        </article>        
+
+        <section id="titulosecundario">
+            <h2 class="animate__animated animate__fadeInRight">Por qué estudiar de esta manera?</h2>
+        </section>
+
+        <article id="desarrollo" class="fundamentos animate__animated animate__fadeInRight">                
+            <p class="fundamentos_parrafo">TAVO proporciona distintos recursos para el aprendizaje en obstetricia.<br>
+                Hoy en día, con las leyes de protección del nacimiento  que promueven la integridad y el respeto por el binomio madre-hijo sobre los procesos de gestación, parto y nacimiento, logrando un cambio en los paradigmas de atención que ha puesto en jaque las intervenciones obstétricas innecesarias, es por ello que se requiere que los alumnos y profesionales se capaciten de manera constante.</p>
+            <img class="fundamentos_img" src="./assets/img/cursos.jpg" alt="clases vituales">
         </article>
         
-
-        <section id="desarrollo" class="animate__animated animate__fadeInRight">
-            <h2 class="titulosecundario">Por qué estudiar de esta manera?</h2>
-            <article class="fundamentos">                
-                <p class="fundamentos_parrafo">TAVO proporciona distintos recursos para el aprendizaje en obstetricia.<br>
-                    Hoy en día, con las leyes de protección del nacimiento  que promueven la integridad y el respeto por el binomio madre-hijo sobre los procesos de gestación, parto y nacimiento, logrando un cambio en los paradigmas de atención que ha puesto en jaque las intervenciones obstétricas innecesarias, es por ello que se requiere que los alumnos y profesionales se capaciten de manera constante.</p>
-                <img class="fundamentos_img" src="./assets/img/cursos.jpg" alt="clases vituales">
-            </article>
-        </section>
         <aside class="animate__animated animate__fadeInUp presentacion">
             <div class="titulodepresentacion">
                 <h3>Maria Victoria Guerzoni</h3>
@@ -87,10 +81,12 @@
         </aside>
         <footer>
             <p>Derechos reservados 2022 - Al usar este sitio, usted acepta nuestros términos de uso y nuestra política de privacidad.</p>
-            <div class="redes__sociales">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
+            <div class="redes_container">
+                <ul>
+                    <li a href="https://es-la.facebook.com/" class="facebook"><i class="fa-brands fa-facebook fb"></i></li>
+                    <li a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-instagram ig"></i></li>
+                    <li a href="https://twitter.com/?lang=es"class="twitter"><i class="fa-brands fa-twitter tw"></i></li>
+                </ul> 
             </div>
         </footer>
     </div>

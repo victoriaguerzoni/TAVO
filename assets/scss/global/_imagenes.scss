@@ -2,7 +2,14 @@
     width: 50%;
     height: 50%;
     border-radius: 50%;
-    border: 5px solid #aadce5;
+    border: 3px solid #aadce5;
+    margin: 1rem;
+
+    @media screen and (min-width: 992px){
+        width: 60%;
+        height: 60%;
+        border: 5px solid #aadce5;           
+    }
 }
 
 .intro_img{
@@ -17,17 +24,27 @@
     @extend .imagen;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    align-items: center;
 }
 
 .actividades_img{
-    @extend .imagen; 
+    @extend .imagen;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
 }
 
 .novedades_img{
-    @extend .imagen;     
+    @extend .imagen;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;     
 }
 
 .mapa{
     @extend .imagen;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-items: center;
 }

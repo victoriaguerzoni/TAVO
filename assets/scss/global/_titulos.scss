@@ -1,0 +1,58 @@
+html, body{
+    width: 100%;
+    height: 100vh;
+    font-family:'Nunito', sans-serif;
+    
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+    font-size: 30px;
+        
+    &.titulo_principal{
+        grid-area: tituloprincipal;
+        display: flex;
+        font-size:34px bold;
+        align-content: center;
+        justify-content: center;
+        color: map-get($palette, "primary");
+        text-shadow: 2px 2px #1d94a4;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        @media screen and (min-width: 992px){
+            justify-content: end;            
+        }
+    }
+}
+
+section#titulosecundario{
+    grid-area: titulosecundario;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size:28px bold;
+    color:map-get($palette, "secondary");
+    text-shadow: 2px 2px map-get($palette , "primary" );
+
+    @media screen and (min-width: 992px){
+        justify-content: center;            
+    }
+}
+/*titulo secundario de la pagina index*/
+.titulodepresentacion{
+    text-align: center;
+    font-size: small;
+}
+/*titulo proncipal de las paginas secundarias*/
+section#titulo__principal__paginas__secundarias{
+    grid-area:tituloprincipalpagsecundaria ;
+    display: flex;
+    justify-content: center;
+    font-size: 18px bold;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+
+

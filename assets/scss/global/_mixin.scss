@@ -4,9 +4,17 @@
     text-align: center;
     font-family:'Nunito', sans-serif;
     font-size: 40px;
-    padding-left: 2rem;
+    padding: 2rem;
     width: 250px;
     height: 75px;
+
+    &.animate-big{
+        transition: all .5s;
+    }
+
+    &.animate-big:hover{
+        color: palevioletred;
+    }
     
 }
 .titulo_actividades{
