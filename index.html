@@ -11,7 +11,11 @@
     <meta name="robots" content="no-index, no-follow"/>
     <link rel="shortcut icon" href="assets/img/favicontavo.png"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>   
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <script src="assets/js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>  
     <script src="https://kit.fontawesome.com/800476bb0b.js" crossorigin="anonymous"></script>
     <link rel= "stylesheet" href="./assets/bootstrap/css/bootstrap.min.css"/> 
     <script src="./assets/bootstrap/js/jquery.slim.min.js"></script>
@@ -54,31 +58,60 @@
     </header>
     <div id="wrapper">
         <section> 
-            <h1 class="titulo_principal animate__animated animate__fadeInLeft">TAVO: Tecnologia de Aprendizaje Virtual en Obstetricia</h1>
+            <h1 class="titulo_principal wow animate__animated animate__fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">TAVO: Tecnologia de Aprendizaje Virtual en Obstetricia</h1>
         </section>
                     
-        <article id="intro" class="introduccion animate__animated animate__fadeInLeft">
-            <img class="intro_img" src="./assets/img/imagendelindex.png" alt="imagendepresentacion">
+        <article id="intro" class="introduccion wow animate__animated animate__fadeInLeft"data-wow-duration="1s" data-wow-delay=".5s">
+            <img class="intro_img" src="./assets/img/medicina-salud.jpg" alt="imagendepresentacion">
             <p class="intro_parrafo">TAVO es un sitio web interactivo pensado para todas aquellos usuarios que quieran capacitarse en obstetricia, con el objetivo de ayudarlos a incorporar nuevos conocimientos de forma ordenada y generando espacios de autoevaluación. A su vez es dinámica y colaborativa, es decir que pueden interactuar entre participantes con distintos niveles formativos. Su fundamento se basa en adquirir un pensamiento integral para el abordaje de las gestantes.</p>
-        </article>        
-
-        <section id="titulosecundario">
-            <h2 class="animate__animated animate__fadeInRight">Por qué estudiar de esta manera?</h2>
-        </section>
-
-        <article id="desarrollo" class="fundamentos animate__animated animate__fadeInRight">                
-            <p class="fundamentos_parrafo">TAVO proporciona distintos recursos para el aprendizaje en obstetricia.<br>
-                Hoy en día, con las leyes de protección del nacimiento  que promueven la integridad y el respeto por el binomio madre-hijo sobre los procesos de gestación, parto y nacimiento, logrando un cambio en los paradigmas de atención que ha puesto en jaque las intervenciones obstétricas innecesarias, es por ello que se requiere que los alumnos y profesionales se capaciten de manera constante.</p>
-            <img class="fundamentos_img" src="./assets/img/cursos.jpg" alt="clases vituales">
         </article>
         
-        <aside class="animate__animated animate__fadeInUp presentacion">
+        <section id="titulosecundario">
+            <h2 class="wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">Por qué estudiar de esta manera?</h2>
+        </section>
+
+        <article id="desarrollo" class="fundamentos wow animate__animated animate__fadeInRight"data-wow-duration="1s" data-wow-delay="1 s">                
+            <p class="fundamentos_parrafo">TAVO proporciona distintos recursos para el aprendizaje en obstetricia.<br>
+                Hoy en día, con las leyes de protección del nacimiento  que promueven la integridad y el respeto por el binomio madre-hijo sobre los procesos de gestación, parto y nacimiento, logrando un cambio en los paradigmas de atención que ha puesto en jaque las intervenciones obstétricas innecesarias, es por ello que se requiere que los alumnos y profesionales se capaciten de manera constante.</p>
+            <img class="fundamentos_img rounded-circle" src="./assets/img/images.jpg" alt="Circle image">
+        </article>
+        
+        <aside class="wow animate__animated animate__fadeInUp presentacion" data-wow-duration="1s" data-wow-delay="1.5s">
             <div class="titulodepresentacion">
                 <h3>Maria Victoria Guerzoni</h3>
                 <h4> Lic. en Obstetricia <br> M.N:9083</h4>
             </div>    
             <p>Soy docente de la UBA. Me desempeñe desde lo principios de mi carrera a formar a estudiantes en la práctica hospitalaria, utilizando distintos recursos para lograr la adquisicion de los conocimientos en obstetricia normal. Siendo que siempre me encontre ejerciendo en distintos ambitos sanitarios con poco caudal de pacientes, vi la necesidad de generar un espacio preliminar al contacto con el paciente, ya que tengo la creencia que todo profesional en formacion tiene que tener un espacio de aprendizaje donde no tema a equivocarse y que su acciones no generen un impacto negativo en las personas que concurrer a un servicio de salud</p>
         </aside>
+    
+        <table class="wow animate__animated animate__fadeInUp table-hover table-bordered table-dark table-sm p-4 text-aling-center" style="background-color:#5d18a6" id="1" cellpadding="10" cellspacing="1" data-wow-duration="1s" data-wow-delay="1.5s">    
+            <tbody class="table-dark text-center" style="background-color:#5d18a6">            
+                <tr>
+                    <th>Actividades</th>
+                    <td>
+                        <ol>clases asincronicas</ol>
+                        <ol>ejercicios</ol>
+                        <ol>simuladores</ol>
+                    </td>
+                    <td>
+                        <ol>sin necesidad de descargar el material, permite adquirir nuevos conceptos y reforzar los ya aprendidos</ol>
+                        <ol>permite seleccionar la dificultas mediante niveles de dificultad</ol>
+                        <ol>mediante ia permite reforzar la toma de decisiones</ol>
+                    </td>
+                    </tr>                
+                <tr>
+                    <th>Bibliografia</th>
+                    <td>todos la bibliografia es una recopilacion de los mejores libros de obstetricia </td>
+                    <td>esta recopilacion esta destinada a fundamentar todo el conocimiento que se pone en la practica</td>
+                </tr>
+                <tr>
+                    <th>Novedades</th>
+                    <td><ol>cursos</ol><ol>noticias</ol></td>
+                    <td>capacitacion y actualizacion continua como pilares de la medicina basada en la evidencia</td>
+                </tr>                
+            </tbody>
+        </table>
+        
         <footer>
             <p>Derechos reservados 2022 - Al usar este sitio, usted acepta nuestros términos de uso y nuestra política de privacidad.</p>
             <div class="redes_container">
