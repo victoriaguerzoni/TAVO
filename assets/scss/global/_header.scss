@@ -1,21 +1,13 @@
-/*header{
-    grid-area:miheader;
-    display: flex;
-    background-color: #162b6e;
-}*/
 
 .logo{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 2px solid #aadce5;
-}
-@media screen and (min-width:992px){
-    .logo{
+
+    @media screen and (min-width:992px){
         width: 20%;
         height: 20%;
-        border-radius: 50%;
     }
 
 }
-    

@@ -8,6 +8,10 @@ $palette:(
     "prueba":red,
 );    
 
-/*cabe destacar que esta paleta de colores solo va a poder ser 
-aplicada a archivos scss, nunca a css de manera directa si quiero aplicar modificaciones 
-en mi css primero tengo que migrar todo lo que deseo modificar a sass. tambien puedo colocar */
+$font-size:(
+    "pequeña":10px,
+    "normal":12px,
+    "mediana":16px,
+    "grande":18px,
+    "extragrande":20px,
+);
