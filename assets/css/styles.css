@@ -88,7 +88,19 @@ section#desarrollo{
 }
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA ACTIVIDADES*/
-
+#wrapper1{
+    display: grid;
+    grid-template-areas: 
+    "tituloprincipalpagsecundaria"
+    "clases"
+    "ejercicios" 
+    "simuladores"
+    "mifooter";
+  
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    width: 100%;
+    height: 100%;        
+}
 /*como estan dispuesta la imagen y el texto: filas y titulo en paralelo*/
 .disposicion_actividades{
     display: flex;
@@ -119,6 +131,20 @@ section#desarrollo{
 }
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA BIBLIOGRAFIA*/
+#wrapper2{
+    display: grid;
+    grid-template-areas: 
+    "tituloprincipalpagsecundaria"
+    "obstetriciaclinica"
+    "obstetricianormal"
+    "obstetriciapatologica"
+    "mifooter";
+    
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-column-gap:5px;
+    width: 100%;
+    height: 100%;         
+}
 /* titulo: bibliografia= centrado y en violeta*/
 .titulo__de__seccion{
     color:#1ecbe1;
@@ -174,8 +200,24 @@ dd{
     text-decoration:underline;
     color: #162b6e;    
 }
+dd:hover{
+    font-size: 20px;
+    color:#1d94a4;
+}
 
 /* CONFIGURACION MOBILEFIRST DE LA PAGINA NOVEDADES*/
+#wrapper3{
+    display: grid;
+    grid-template-areas: 
+    "tituloprincipalpagsecundaria"
+    "cursos"
+    "noticias"
+    "mifooter";
+    grid-template-rows:auto 1fr 1fr auto;
+    grid-column-gap:5px;
+    width: 100%;
+    height: 100%;        
+}
  /*distribucion de las imagenes y titulos*/   
  .disposicion_novedades{
     display: flex;
@@ -185,10 +227,26 @@ dd{
 }
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA CONTACTOS*/
-
+#wrapper4{
+    display: grid;
+    grid-template-areas: 
+    "tituloprincipalpagsecundaria"
+    "direcciondecontacto"
+    "formulario"
+    "mifooter";
+    grid-template-rows: auto auto 1fr auto;
+    grid-row-gap: 5px;
+    width: 100%;
+    height: 100%;        
+}
+address#direccion__de__contacto{
+    grid-area: direcciondecontacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .disposicion_parrafo_mapa{
     text-align: center;
-    padding-top: 1rem;
 }
 
 .articulo{
@@ -228,7 +286,7 @@ dd{
         grid-row-gap: 5px;
         grid-column-gap:5px;
         width: 100%;
-        height: 100%;          
+        height: 100vh;          
     }
 
     aside{
@@ -301,12 +359,11 @@ dd{
     #wrapper1{
         display: grid;
         grid-template-areas: 
-        "miheader miheader miheader"
         "tituloprincipalpagsecundaria tituloprincipalpagsecundaria tituloprincipalpagsecundaria"
         "clases ejercicios simuladores"
         "mifooter mifooter mifooter";
         grid-template-columns:33% 33% 33% ;
-        grid-template-rows: auto auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
         grid-row-gap: 5px;
         grid-column-gap:5px;
         width: 100%;
@@ -356,16 +413,15 @@ dd{
     #wrapper2{
         display: grid;
         grid-template-areas: 
-        "miheader miheader miheader"
         "tituloprincipalpagsecundaria tituloprincipalpagsecundaria tituloprincipalpagsecundaria"
         "obstetriciaclinica obstetricianormal obstetriciapatologica"
         "mifooter mifooter mifooter";
         grid-template-columns:33% 33% 33% ;
-        grid-template-rows: auto auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
         grid-row-gap: 5px;
         grid-column-gap:5px;
         width: 100%;
-        height: 100vh;         
+        height: 100%;         
     }
 
     .disposicion_bibliografia{
@@ -426,7 +482,7 @@ dd{
         grid-row-gap: 5px;
         grid-column-gap:5px;
         width: 100%;
-        height: 100vh;        
+        height: 100%;        
     }
 
     section#cursos{
@@ -465,7 +521,7 @@ dd{
         grid-row-gap: 5px;
         grid-column-gap:5px;
         width: 100%;
-        height: 100vh;        
+        height: 100%;        
     }
 
     address#direccion__de__contacto{
@@ -495,6 +551,7 @@ dd{
 /*FOOTER*/
 footer{
     grid-area:mifooter;
+    display: flex;
     background-color: #1d94a4;
     padding-top: 15px;
     text-align: center;

@@ -13,7 +13,7 @@
     }
 
     &.animate-big:hover{
-        color: palevioletred;
+        color:palevioletred;
     }
     
 }
@@ -23,3 +23,4 @@
 .titulo_novedades{
     @include titulodecoradoneon(#5d18a6);
 }
+
