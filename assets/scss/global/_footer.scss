@@ -1,0 +1,90 @@
+footer{
+    grid-area:mifooter;
+    display: flex;
+    flex-direction: column;
+    background-color:map-get($palette, "primary");
+    padding: 15px;
+    color:map-get($palette, "font-clara" );
+    text-align: center;
+    justify-content: center;
+
+    p{
+        display: flex;
+        color:map-get($palette, "font-clara" );
+        font-size: map-get($font-size, "mediana");
+    }
+
+    .redes_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: map-get($font-size, "extragrande");
+    }
+    .redes_container ul li{
+        display: inline-block;
+        margin: 0 5px;
+    }
+    
+    .redes_container ul li a{
+        display: block;
+        padding: 0 10px;
+        background:map-get($palette, "font-clara");
+        transition: 0.2s;
+        align-items: center;
+    }    
+
+    .redes_container ul:hover a{
+        filter:blur(2px);
+        border-radius: 50%;
+    }
+    .redes_container ul li a:hover{
+        transform: translateY(-3px)scale(1.05);
+        filter:none;
+        border-radius: 50%;
+    }
+    .redes_container ul li .fb:hover{
+        background:map-get($palette, "primary" );
+        border-radius: 50%;
+        border:5px solid map-get($palette, "facebook");
+    }
+    .redes_container ul li .ig:hover{
+        background:map-get($palette, "instagram");
+        border-radius: 50%;
+        border:5px solid map-get($palette, "instagram");
+    }
+    .redes_container ul li .tw:hover{
+        background:map-get($palette, "twitter");
+        border-radius: 50%;
+        border:5px solid map-get($palette, "twitter");
+    }
+
+    
+    @media screen and (min-width: 768px){
+        p{
+            font-size: map-get($font-size, "litle");
+        }
+        
+        .redes_container{
+            font-size: map-get($font-size, "mediana");
+        }
+    }
+    @media screen and (min-width: 992px){
+        p{
+            font-size: map-get($font-size, "mediana");
+        }
+        
+        .redes_container{
+            font-size: map-get($font-size, "grande");
+        }        
+    }
+    @media screen and (min-width: 1200px){
+        p{
+            font-size: map-get($font-size, "mediana");
+        }
+        
+        .redes_container{
+
+            font-size: map-get($font-size, "extragrande");
+        }          
+    }
+}

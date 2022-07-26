@@ -1,17 +1,56 @@
 $palette:(
     "primary":#162b6e,
     "secondary": #1d94a4,
+    "third":#00bbb4,
     "subtitle": #5d18a6,
     "neon":#aadce5,
     "turn":palevioletred,
-    "fonts":#21224e,
+    "font-oscura":#21224e,
+    "font-clara":#fff,
     "prueba":red,
+    "facebook":#1a4789,
+    "instagram":#d43377,
+    "twitter":#1b9df0,
 );    
 
 $font-size:(
-    "pequeña":10px,
+    "litle":10px,
     "normal":12px,
     "mediana":16px,
-    "grande":18px,
-    "extragrande":20px,
+    "mediagrande":18px,
+    "grande":28px,
+    "extragrande":30px,
+);
+
+$h1:(
+    "litle":10px,
+    "normal":12px,
+    "mediana":16px,
+    "mediagrande":18px,
+    "grande":28px,
+    "extragrande":30px,
+);
+$h2:(
+    "litle":10px,
+    "normal":12px,
+    "mediana":16px,
+    "mediagrande":18px,
+    "grande":28px,
+    "extragrande":30px,
+);
+$h3:(
+    "litle":10px,
+    "normal":12px,
+    "mediana":16px,
+    "mediagrande":18px,
+    "grande":28px,
+    "extragrande":30px,
+);
+$h4:(
+    "litle":10px,
+    "normal":12px,
+    "mediana":16px,
+    "mediagrande":18px,
+    "grande":28px,
+    "extragrande":30px,
 );
