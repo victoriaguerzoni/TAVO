@@ -548,60 +548,6 @@ address#direccion__de__contacto{
     }
 
 } 
-/*FOOTER*/
-footer{
-    grid-area:mifooter;
-    display: flex;
-    background-color: #1d94a4;
-    padding-top: 15px;
-    text-align: center;
-    font-family:'Nunito', sans-serif;
-    font-size: 18px;
-    color:#fff;
-}   
 
-.redes_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.redes_container ul li{
-    display: inline-block;
-    margin: 0 5px;
-    text-align: center;
-}
-.redes_container ul li a{
-    display: block;
-    padding: 0 10px;
-    background:#fff;
-    color:#162b6e;
-    font-size: 30px;
-    transition: 0.2s;
-}
-
-.redes_container ul:hover a{
-    filter:blur(2px);
-    border-radius: 50%;
-}
-.redes_container ul li a:hover{
-    transform: translateY(-3px)scale(1.05);
-    filter:none;
-    border-radius: 50%;
-}
-.redes_container ul li .fb:hover{
-    background:#162b6e;
-    border-radius: 50%;
-    border:5px solid #162b6e;
-}
-.redes_container ul li .ig:hover{
-    background:#d6249f;
-    border-radius: 50%;
-    border:5px solid #d6249f;
-}
-.redes_container ul li .tw:hover{
-    background:#1ecbe1;
-    border-radius: 50%;
-    border:5px solid #1ecbe1;
-}
 
 

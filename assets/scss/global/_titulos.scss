@@ -8,12 +8,12 @@ h1{
     text-align: center;
     justify-content: center;
     padding: 2px;
-    font-size: 30px;
+    font-size: map-get($h1, "extragrande" );
         
     &.titulo_principal{
         grid-area: tituloprincipal;
         display: flex;
-        font-size:34px bold;
+        font-size:map-get($h1, "extragrande") bold;
         align-content: center;
         justify-content: center;
         color: map-get($palette, "primary");
@@ -32,7 +32,7 @@ section#titulosecundario{
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-size:28px bold;
+    font-size:map-get($h2, "grande" ) bold;
     color:map-get($palette, "secondary");
     text-shadow: 2px 2px map-get($palette , "primary" );
 
@@ -43,16 +43,18 @@ section#titulosecundario{
 /*titulo secundario de la pagina index*/
 .titulodepresentacion{
     text-align: center;
-    font-size: small;
+    font-size: map-get($h3, "normal" );
 }
 /*titulo proncipal de las paginas secundarias*/
 section#titulo__principal__paginas__secundarias{
-    grid-area:tituloprincipalpagsecundaria ;
+    grid-area:tituloprincipalpagsecundaria;
     display: flex;
     justify-content: center;
-    font-size: 18px bold;
+    font-size: map-get($h1, "grande") bold;
     font-family: 'Times New Roman', Times, serif;  
 }
+
+
 
 
 
