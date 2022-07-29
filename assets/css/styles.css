@@ -29,8 +29,7 @@ aside{
     grid-area: presentacion;
     display: flex;
     flex-wrap: wrap;
-    background-color:#aadce5;
-    font-size: 10px;
+    background-color:#00bbb4;
     text-align: center;
     line-height: 1.5;
 }
@@ -54,8 +53,7 @@ article#intro{
     align-items: center;
     font-family:'Nunito', sans-serif;
     font-size: 14px;
-    font-weight: bold;
-    color:#162b6e;   
+    font-weight: bold;  
 }
 
 /*Desarrollo: segundo parrafo central*/
@@ -84,7 +82,6 @@ section#desarrollo{
     font-family:'Nunito', sans-serif;
     font-size: 14px;
     font-weight: bold;
-    color:#162b6e;
 }
 
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA ACTIVIDADES*/
@@ -292,7 +289,7 @@ address#direccion__de__contacto{
     aside{
         visibility: visible;
         grid-area: presentacion;
-        background-color: #aadce5;
+        background-color: #00bbb4;
         font-size: 10px;
         text-align: justify;
         line-height: 1.5;

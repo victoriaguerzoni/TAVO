@@ -4,9 +4,10 @@ footer{
     flex-direction: column;
     background-color:map-get($palette, "primary");
     padding: 15px;
-    color:map-get($palette, "font-clara" );
+    color:map-get($palette, "font-clara");
     text-align: center;
     justify-content: center;
+    align-items: center;
 
     p{
         display: flex;

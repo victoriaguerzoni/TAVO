@@ -1,0 +1,15 @@
+$vista:tablet;
+
+p{
+    @if ($vista=='mobile'){
+        @media only screen and (min-width: 768px){
+            color: red;
+        }
+    } @else if ($vista== 'tablet'){ 
+        @media screen and (min-width: 992px){
+            color:green;
+        }
+    } @else{
+        color:violet;
+    }
+}
