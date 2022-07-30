@@ -29,7 +29,7 @@ footer{
     .redes_container ul li a{
         display: block;
         padding: 0 10px;
-        background:map-get($palette, "font-clara");
+        background:map-get($palette, "primary");
         transition: 0.2s;
         align-items: center;
     }    
@@ -37,26 +37,28 @@ footer{
     .redes_container ul:hover a{
         filter:blur(2px);
         border-radius: 50%;
+        background-color: map-get($palette, "neon" );
     }
     .redes_container ul li a:hover{
         transform: translateY(-3px)scale(1.05);
         filter:none;
+        background-color: map-get($palette, "primary");
         border-radius: 50%;
     }
     .redes_container ul li .fb:hover{
         background:map-get($palette, "primary" );
         border-radius: 50%;
-        border:5px solid map-get($palette, "facebook");
+        border:5px solid map-get($palette, "neon");
     }
     .redes_container ul li .ig:hover{
         background:map-get($palette, "instagram");
         border-radius: 50%;
-        border:5px solid map-get($palette, "instagram");
+        border:5px solid map-get($palette, "neon");
     }
     .redes_container ul li .tw:hover{
         background:map-get($palette, "twitter");
         border-radius: 50%;
-        border:5px solid map-get($palette, "twitter");
+        border:5px solid map-get($palette, "neon");
     }
 
     

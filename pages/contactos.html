@@ -71,14 +71,14 @@
             <article class="articulo">
                 <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
                     <fieldset>
-                        <legend class="configuracion_formulario">REALIZA TU CONSULTA AQUI</legend>
-                        <legend>Datos Personales</legend>
+                        <legend class="configuracion_formulario">Su opinión nos importa!, escríbanos</legend>
+                        <h5>Datos Personales</h5>
                         <label class="config_texto" for="nombre">Nombre:</label>
                         <input class= "config_texto" type="text"id="nombre" name="nombre"autofocus required/><br>
                         <label class= "config_texto" for="apellido">Apellido:</label> 
                         <input class= "config_texto" type="text" id="apellido" name="apellido"required><br>
                         <label class= "config_texto" for="email">Email:</label>
-                        <input class= "config_texto" type="email" id="email" name="email"placeholder="dominio@gmail.com" required pattern="@gmail.com"/><br>
+                        <input class= "config_texto" type="email" id="email" name="email"placeholder="dominio@gmail.com"><br>
                         <label class= "config_texto" for="ocupacion">Ocupacion</label>
                         <select class= "config_texto" name="ocupacion">
                             <option value="estudiante de lic en obstetricia">estudiante de lic. en obstetricia</option>
@@ -88,7 +88,7 @@
                             <option value="estudiante de otras carreras">estudiante de otras carreras</option>
                             <option value="otra profesion">otra profesion</option>
                         </select>
-                        <div class= "config_texto"><p>¿Desea recibir notificaciones?</p>
+                        <div class= "config_texto"><span>¿Desea recibir notificaciones?</span>
                             <div> si
                                 <input type="radio" name="notificaciones" value="si">
                             </div>
@@ -97,11 +97,11 @@
                             </div>
                         </div>
                         <div>
-                            <label class="config_texto" for="escriba su consulta">Escriba su consulta</label><br>
+                            <label class="config_texto" for="escriba su consulta">Dejanos tu mensaje aqui</label><br>
                             <textarea name="consulta" id="consulta" rows="5" cols="45"></textarea>
                         </div>                            
-                        <button type="button" class="btn btn-info">enviar</button>
-                        <button type="button" class="btn btn-danger">borrar todo</button>
+                        <button type="submit" class="btn btn-info">enviar</button>
+                        <button type="reset" class="btn btn-danger">borrar todo</button>
                     </fieldset>
                 </form>
             </article>
@@ -110,9 +110,9 @@
             <p>Derechos reservados 2022 - Al usar este sitio, usted acepta nuestros términos de uso y nuestra política de privacidad.</p>
             <div class="redes_container">
                 <ul>
-                    <li a href="https://es-la.facebook.com/" class="facebook"><i class="fa-brands fa-facebook fb"></i></li>
-                    <li a href="https://www.instagram.com/" class="instagram"><i class="fa-brands fa-instagram ig"></i></li>
-                    <li a href="https://twitter.com/?lang=es"class="twitter"><i class="fa-brands fa-twitter tw"></i></li>
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fb"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram ig"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=es"target="_blank"><i class="fa-brands fa-twitter tw"></i></a></li>
                 </ul> 
             </div>
         </footer>

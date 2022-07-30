@@ -142,16 +142,6 @@ section#desarrollo{
     width: 100%;
     height: 100%;         
 }
-/* titulo: bibliografia= centrado y en violeta*/
-.titulo__de__seccion{
-    color:#1ecbe1;
-    text-align: center;
-    border: 1px solid #1ecbe1;
-    padding-top: 1rem;
-    font-family:'Nunito', sans-serif;;
-    font-size: 16px;
-    margin: auto;
-}
 
 /* como esta dispuesta los titulos y los subtemas*/
 .disposicion_bibliografia{
@@ -164,25 +154,21 @@ section#desarrollo{
 #obstetriciaclinica{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #1ecbe1;
     font-size: 18px;
-    color:#1d94a4;
 }
+
 
 #obstetricianormal{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #1ecbe1;
     font-size: 18px;
-    color:#1d94a4;
 }
 
 #obstetriciapatologica{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #1ecbe1;
     font-size: 18px;
-    color:#1d94a4;
+
 }
 
 .dt{
@@ -364,7 +350,7 @@ address#direccion__de__contacto{
         grid-row-gap: 5px;
         grid-column-gap:5px;
         width: 100%;
-        height: 100%;        
+        height: 100vh;        
     }
 
 
@@ -425,45 +411,37 @@ address#direccion__de__contacto{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;       
+        align-content: center;       
     }
 
     #obstetriciaclinica{
         grid-area: obstetriciaclinica;
         display: flex;        
-        border: 2px solid #1ecbe1;
         margin: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
-        font-size: 40px;
-        color:#1d94a4;        
+        font-size: 40px;       
     }
 
     #obstetricianormal{
         grid-area: obstetricianormal;
         display: flex;
-        border: 2px solid #1ecbe1;
         margin: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
-        font-size: 40px;
-        color:#1d94a4;        
+        font-size: 40px;      
     }
 
     #obstetriciapatologica{
         grid-area: obstetriciapatologica;
         display: flex;
-        border: 2px solid #1ecbe1;
         margin: 1rem;
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;
         font-size: 40px;
-        color:#1d94a4;
-        padding-left: 2rem;
-        padding-right: 2rem;
     }
 
     /*CONFIGURACION DE LA PAGINA DE NOVEDADES PARA MEDIAQUERIES 992PX*/

@@ -43,7 +43,8 @@ section#titulosecundario{
 /*titulo secundario de la pagina index*/
 .titulodepresentacion{
     text-align: center;
-    font-size: map-get($h3, "normal" );
+    font-size: map-get($h4, "normal" );
+    color:map-get($palette, "font-clara");
 }
 /*titulo proncipal de las paginas secundarias*/
 section#titulo__principal__paginas__secundarias{

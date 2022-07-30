@@ -6,6 +6,7 @@ $bibliografia:(
 @each $subtema, $color in $bibliografia {
     .subtitulo-#{$subtema}{
         color:$color;
+        font-size: map-get($font-size, 'grande' );
     }
     
 }
