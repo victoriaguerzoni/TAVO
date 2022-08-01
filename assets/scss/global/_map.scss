@@ -3,10 +3,10 @@ $bibliografia:(
     "obstetricianormal":#5d18a6,
     "obstetriciapatologica":#162b6e
 );
-@each $subtema, $color in $bibliografia {
-    .subtitulo-#{$subtema}{
+@each $temario, $color in $bibliografia {
+    .subtitulo-#{$temario}{
         color:$color;
-        font-size: map-get($font-size, 'grande' );
+        font-size: map-get($font-size, 'medianagrande' );
     }
     
 }

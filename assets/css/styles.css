@@ -23,17 +23,6 @@
     height: 100vh;
 }
 
-
-/*aside:presentacion en margen izquierdo*/
-aside{
-    grid-area: presentacion;
-    display: flex;
-    flex-wrap: wrap;
-    background-color:#00bbb4;
-    text-align: center;
-    line-height: 1.5;
-}
-
 /*introduccion: texto central*/
 article#intro{
     grid-area: intro;
@@ -47,14 +36,6 @@ article#intro{
     flex-direction: column;
 }
 
-.intro_parrafo{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    font-family:'Nunito', sans-serif;
-    font-size: 14px;
-    font-weight: bold;  
-}
 
 /*Desarrollo: segundo parrafo central*/
 section#desarrollo{
@@ -64,7 +45,7 @@ section#desarrollo{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center; 
 }
 
 .fundamentos{
@@ -74,16 +55,19 @@ section#desarrollo{
     justify-content: center;
 }
 
-.fundamentos_parrafo{
+aside.presentacion{
+    grid-area: presentacion;
     display: flex;
     flex-wrap: wrap;
+    background-color:#00bbb4;
+    color: #fff;
     text-align: center;
-    border-top: 2rem;
-    font-family:'Nunito', sans-serif;
-    font-size: 14px;
+    font-style: italic;
     font-weight: bold;
+    font-size: 12px;
+    padding:1rem;
+   
 }
-
 /*CONFIGURACION MOBILEFIRST DE LA PAGINA ACTIVIDADES*/
 #wrapper1{
     display: grid;
@@ -272,17 +256,7 @@ address#direccion__de__contacto{
         height: 100vh;          
     }
 
-    aside{
-        visibility: visible;
-        grid-area: presentacion;
-        background-color: #00bbb4;
-        font-size: 10px;
-        text-align: justify;
-        line-height: 1.5;
-        padding: 14px;
-    }
-
-    /*2°seccion: intro*/
+    /*seccion: intro*/
     article#intro{
         grid-area: intro;
         display: flex;
@@ -296,15 +270,7 @@ address#direccion__de__contacto{
         justify-content: center;
     }
 
-    .intro_parrafo{
-        display: flex;
-        justify-content: center;
-        padding-right: 1rem;
-        font-weight: lighter;
-        font-size: 18px;  
-        line-height: 1.3;   
-    }
-    /*3°seccion:desarrollo*/
+    /*seccion:desarrollo*/
 
     article#desarrollo{
         grid-area:desarrollo;
@@ -321,15 +287,11 @@ address#direccion__de__contacto{
         justify-content: center;
     }
 
-    .fundamentos_parrafo{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 1rem;
-        font-weight: lighter;
-        font-size: 18px;
-        line-height: 1.3;
+    aside{
+        visibility: visible;
+        grid-area: presentacion;
     }
+
     table{
         grid-area: tabla;
         visibility: visible;
@@ -523,6 +485,8 @@ address#direccion__de__contacto{
     }
 
 } 
+
+
 
 
 

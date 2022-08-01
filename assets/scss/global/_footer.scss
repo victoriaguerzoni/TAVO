@@ -9,7 +9,7 @@ footer{
     justify-content: center;
     align-items: center;
 
-    p{
+    span{
         display: flex;
         color:map-get($palette, "font-clara" );
         font-size: map-get($font-size, "mediana");
@@ -37,7 +37,6 @@ footer{
     .redes_container ul:hover a{
         filter:blur(2px);
         border-radius: 50%;
-        background-color: map-get($palette, "neon" );
     }
     .redes_container ul li a:hover{
         transform: translateY(-3px)scale(1.05);
