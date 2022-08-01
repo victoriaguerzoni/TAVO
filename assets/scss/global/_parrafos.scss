@@ -1,0 +1,43 @@
+p{
+    font-size:map-get($font-size, "mediana");
+    font-family: 'nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:map-get($palette, "primary");
+
+    
+    @media screen and (min-width: 768px){
+        font-size:map-get($font-size, "normal");
+        color:map-get($palette, "font-oscura");
+           
+    }
+    @media screen and (min-width: 992px){
+        font-size:map-get($font-size, "mediana");
+        color:map-get($palette, "primary");    
+    }
+    @media screen and (min-width: 1200px){
+        font-size:map-get($font-size, "mediagrande");
+        color:map-get($palette, "secondary");          
+    }
+}
+
+.intro_parrafo{
+    @extend p;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem;    
+}
+
+.fundamentos_parrafo{
+    @extend p;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2rem;
+    padding: 1rem;
+
+}
+
+
+
+
+
