@@ -37,13 +37,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-md-0">
                     <li class="nav-item">
-                      <a class="nav-link" href="../index.html">inicio</a>
+                      <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="../pages/actividades.html">Actividades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/bibliografia.html">bibliografia</a>
+                        <a class="nav-link" href="../pages/bibliografia.html">Bibliografía</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/novedades.html">Novedades</a>
@@ -61,7 +61,7 @@
         </section>
             
         <address id="direccion__de__contacto"class="text-aling-center">
-            <p>Escriba a <a href="mailto:consultas@tavo.com">consultas@tavo.com</a><br>telefono 011-xxxx-xxxx. <br>Visitenos en: Avenida juan de los palotes 000 <br> Box 564, Ciudad Autonoma de Buenos Aires.<br>Argentina.<br></p>
+            <p>Escriba a <a href="mailto:consultas@tavo.com">consultas@tavo.com</a><br>teléfono 011-xxxx-xxxx. <br>Visitenos en: Avenida juan de los palotes 000 <br> Box 564, Ciudad Autónoma de Buenos Aires.<br>Argentina.<br></p>
             <picture>
                 <img class="mapa" src="../assets/img/localizaciondetavo.png" alt="mapa de localizacion">
             </picture>
@@ -79,25 +79,23 @@
                         <input class= "config_texto" type="text" id="apellido" name="apellido"required><br>
                         <label class= "config_texto" for="email">Email:</label>
                         <input class= "config_texto" type="email" id="email" name="email"placeholder="dominio@gmail.com"><br>
-                        <label class= "config_texto" for="ocupacion">Ocupacion</label>
+                        <label class= "config_texto" for="ocupacion">Ocupación</label>
                         <select class= "config_texto" name="ocupacion">
                             <option value="estudiante de lic en obstetricia">estudiante de lic. en obstetricia</option>
                             <option value="estudiante de medicina">estudiante de medicina</option>
                             <option value="lic. en obstetricia">lic. en obstetricia</option>
-                            <option value="medico">medico</option>
+                            <option value="medico">médico</option>
                             <option value="estudiante de otras carreras">estudiante de otras carreras</option>
-                            <option value="otra profesion">otra profesion</option>
+                            <option value="otra profesion">otra profesión</option>
                         </select>
-                        <div class= "config_texto"><span>¿Desea recibir notificaciones?</span>
-                            <div> si
-                                <input type="radio" name="notificaciones" value="si">
-                            </div>
-                            <div> no
-                                 <input type="radio" name="notificaciones" value="no">
-                            </div>
+                        <label>¿Desea recibir notificaciones sobre actualizaciones del sitio?</label>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1">Si</label>
                         </div>
+                                                   
                         <div>
-                            <label class="config_texto" for="escriba su consulta">Dejanos tu mensaje aqui</label><br>
+                            <label class="config_texto" for="escriba su consulta">Dejanos tu mensaje aquí</label><br>
                             <textarea name="consulta" id="consulta" rows="5" cols="45"></textarea>
                         </div>                            
                         <button type="submit" class="btn btn-info">enviar</button>
