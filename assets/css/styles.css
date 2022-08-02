@@ -212,9 +212,6 @@ address#direccion__de__contacto{
     flex-direction: column;
     align-items: center;
 }
-.disposicion_parrafo_mapa{
-    text-align: center;
-}
 
 .articulo{
     padding: 1rem;
@@ -478,7 +475,7 @@ address#direccion__de__contacto{
         font-size: bold;
         
     }
-
+    
     .config_texto{
         margin: 10px;
         color:#1d94a4;        
